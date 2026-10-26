@@ -11,8 +11,13 @@ while(value1 == NaN){
 
 let operator = prompt("Enter Your Operator");
 let value2 = prompt("Enter Your Second Value");
-
 value2 = Number(value2);
+
+while(value2 == NaN){
+    alert(err);
+    value2 = prompt("Enter Your First Value");
+    value2 = Number(value2);
+}
 
 switch(operator) {
     case '+' : {
